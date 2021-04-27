@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.form-container {
+  width: 100%;
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: url("/photos/bg-intro-desktop.png"), #FF7979;
+  color: white;
+  padding: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  width: 327px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 35px;
+  letter-spacing: -0.29px;
+  margin-bottom: 20px;
+}
+
+.sub-text {
+  width: 327px;
+  height: 130px;
+  text-align: center;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.cta {
+  width: 327px;
+  height: 88px;
+  border-radius: 10px;
+  border: none;
+  background-color: #5E54A4;
+  color: white;
+  -webkit-box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.27px;
+  font-weight: 400;
+  margin: 50px auto 30px auto;
+}
+
+.cta p {
+  width: 194px;
+  height: 52px;
+  margin: auto;
+}
+
+.cta span {
+  font-weight: 900;
+}
+
+.form {
+  background-color: white;
+  width: 327px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px 5px 10px 5px;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+label {
+  display: none;
+}
+
+.error-msg-fname,
+.error-msg-lname,
+.error-msg-email,
+.error-msg-password {
+  display: none;
+  color: #FF7979;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: right;
+  margin-right: 25px;
+}
+
+.error {
+  background: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: 95%;
+  background-position-y: center;
+}
+
+input {
+  width: 279px;
+  height: 56px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid #DEDEDE;
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+input:-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+input::-ms-input-placeholder {
+  padding-left: 10px;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+input:first-of-type {
+  margin-top: 25px;
+}
+
+.submit-btn {
+  width: 279px;
+  height: 56px;
+  background-color: #38CC8B;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0px 5px #299768;
+          box-shadow: 0px 5px #299768;
+  font-weight: bolder;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.agreed {
+  width: 249px;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  font-size: 11px;
+  line-height: 21px;
+  font-weight: 550;
+  color: #BAB7D4;
+}
+
+.agreed span {
+  color: #FF7979;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 1100px) {
+  .form-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 0px;
+  }
+  .title {
+    width: 525px;
+    text-align: left;
+    font-size: 50px;
+  }
+  .sub-text {
+    width: 525px;
+    text-align: left;
+  }
+  .cta {
+    width: 540px;
+    height: 60px;
+    margin: 20px auto;
+  }
+  .cta p {
+    width: 316px;
+    height: 26px;
+  }
+  .form {
+    width: 540px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  input {
+    width: 460px;
+  }
+  .error-msg-fname,
+  .error-msg-lname,
+  .error-msg-email,
+  .error-msg-password {
+    margin-right: 35px;
+  }
+}
